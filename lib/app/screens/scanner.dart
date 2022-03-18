@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../../widgets/app_bar_title.dart';
+
 class Scanner extends StatefulWidget {
   const Scanner({Key? key}) : super(key: key);
 
@@ -28,17 +30,9 @@ class _ScannerState extends State<Scanner> {
         : 300.0;
     return Scaffold(
       appBar: AppBar(
-        title: Container(
-            decoration: BoxDecoration(
-              boxShadow: [
-                BoxShadow(
-                  color: Theme.of(context).highlightColor,
-                  spreadRadius: 8,
-                  blurRadius: 24,
-                ),
-              ],
-            ),
-            child: Text('QR Strength')),
+        title: const AppBarTitle(
+          pageTitle: 'QR Strength',
+        ),
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),
@@ -47,7 +41,7 @@ class _ScannerState extends State<Scanner> {
           Column(
             children: <Widget>[
               Expanded(
-                flex: 10,
+                flex: 11,
                 child: Stack(
                   children: [
                     QRView(
@@ -63,19 +57,23 @@ class _ScannerState extends State<Scanner> {
                 ),
               ),
               Expanded(
-                flex: 1,
+                flex: 2,
                 child: Center(
-                  child: Column(
-                    children: [
-                      Text(
-                        'A Trainer In Your Pocket',
-                        style: TextStyle(
-                            color: Theme.of(context).accentColor,
-                            fontWeight: FontWeight.w900,
-                            fontSize: 20),
-                      ),
-                      const Text('Scan a code to begin'),
-                    ],
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          'A Trainer In Your Pocket',
+                          style: TextStyle(
+                              color: Theme.of(context).accentColor,
+                              fontWeight: FontWeight.w900,
+                              fontSize: 20),
+                        ),
+                        const Text('Scan a code to begin'),
+                      ],
+                    ),
                   ),
                 ),
               ),

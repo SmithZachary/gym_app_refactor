@@ -22,7 +22,7 @@ class HomeScreen extends StatelessWidget {
   final pages = [
     const WelcomePage(),
     const StreamPage(),
-    const TabBarDemosPage(),
+    const TabBarDemo(),
     const StaffPage(),
   ];
 

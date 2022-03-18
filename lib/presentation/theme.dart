@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'colors.dart';
 
-class LoopTheme {
+class THeme {
   static final ThemeData lightTheme = _buildLightTheme();
   static final ThemeData darkTheme = _buildDarkTheme();
   static final ThemeData midnightTheme = _buildMidnightTheme();
@@ -108,12 +108,12 @@ class ThemeNotifier extends ChangeNotifier {
   ThemeData get theme {
     switch (_userTheme) {
       case ThemeType.light:
-        return LoopTheme.lightTheme;
+        return THeme.lightTheme;
       case ThemeType.dark:
-        return LoopTheme.darkTheme;
+        return THeme.darkTheme;
       case ThemeType.midnight:
       default:
-        return LoopTheme.midnightTheme;
+        return THeme.midnightTheme;
     }
   }
 
