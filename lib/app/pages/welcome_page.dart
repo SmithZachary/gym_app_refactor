@@ -1,10 +1,10 @@
-import 'package:flutter/cupertino.dart';
+import 'package:bar_gym_app/components/widgets/_widgets.dart';
+
 import 'package:flutter/material.dart';
 
 import '../../components/_components.dart';
-import '../../widgets/_widgets.dart';
+
 import '../screens/_screens.dart';
-import '../utils/consts.dart';
 
 class WelcomePage extends StatelessWidget {
   const WelcomePage({Key? key}) : super(key: key);

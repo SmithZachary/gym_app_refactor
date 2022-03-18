@@ -2,8 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../app/screens/_screens.dart';
-import '../widgets/_widgets.dart';
+
 import '_components.dart';
+import 'widgets/_widgets.dart';
 
 class BottomNavBar extends StatefulWidget {
   const BottomNavBar({

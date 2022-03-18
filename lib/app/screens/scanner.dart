@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import '../../widgets/app_bar_title.dart';
+import '../../components/widgets/app_bar_title.dart';
+
+
 
 class Scanner extends StatefulWidget {
   const Scanner({Key? key}) : super(key: key);
