@@ -11,6 +11,7 @@ class WelcomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    String userName = "Zachary B Smith";
     return Scaffold(
       appBar: AppBar(
         title: Container(
@@ -41,6 +42,7 @@ class WelcomePage extends StatelessWidget {
                     onTap: () {
                       Navigator.of(context).push(ProfileScreen.route);
                     },
+                    userName: userName,
                   ),
                 ),
               ),

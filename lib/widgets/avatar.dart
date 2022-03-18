@@ -1,17 +1,20 @@
 import 'dart:math';
 
 // import 'package:cached_network_image/cached_network_image.dart';
+import 'package:bar_gym_app/app/utils/initials.dart';
 import 'package:flutter/material.dart';
 
 class Avatar extends StatelessWidget {
   const Avatar({
     Key? key,
+    required this.userName,
     this.url,
     required this.radius,
     this.onTap,
   }) : super(key: key);
 
   const Avatar.smallMedium({
+    required this.userName,
     Key? key,
     this.url,
     this.onTap,
@@ -19,6 +22,7 @@ class Avatar extends StatelessWidget {
         super(key: key);
 
   const Avatar.small({
+    required this.userName,
     Key? key,
     this.url,
     this.onTap,
@@ -26,6 +30,7 @@ class Avatar extends StatelessWidget {
         super(key: key);
 
   const Avatar.medium({
+    required this.userName,
     Key? key,
     this.url,
     this.onTap,
@@ -33,6 +38,7 @@ class Avatar extends StatelessWidget {
         super(key: key);
 
   const Avatar.large({
+    required this.userName,
     Key? key,
     this.url,
     this.onTap,
@@ -42,6 +48,7 @@ class Avatar extends StatelessWidget {
   final double radius;
   final String? url;
   final VoidCallback? onTap;
+  final String userName;
 
   @override
   Widget build(BuildContext context) {
@@ -74,7 +81,7 @@ class Avatar extends StatelessWidget {
         backgroundColor: colors[_random.nextInt(colors.length)],
         child: Center(
           child: Text(
-            'ZS',
+            initials(name: userName),
             style: TextStyle(fontSize: radius),
           ),
         ),
