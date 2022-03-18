@@ -18,8 +18,11 @@ dependencies:
   stacked_services:
 # components
   flutter_speed_dial:
+  qr_code_scanner:
+# utilities
+  url_launcher:
 
-  cupertino_icons: ^1.0.2
+  cupertino_icons:
 
 dev_dependencies:
   flutter_test:

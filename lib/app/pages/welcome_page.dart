@@ -11,20 +11,12 @@ class WelcomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    String pageTitle = 'The Bar Gym';
     String userName = "Zachary B Smith";
     return Scaffold(
       appBar: AppBar(
-        title: Container(
-          decoration: BoxDecoration(
-            boxShadow: [
-              BoxShadow(
-                color: Theme.of(context).cardColor,
-                spreadRadius: spreadRadius8,
-                blurRadius: blurRadius24,
-              ),
-            ],
-          ),
-          child: const Text('The Bar'),
+        title: AppBarTitle(
+          pageTitle: pageTitle,
         ),
         centerTitle: false,
         leadingWidth: 54,

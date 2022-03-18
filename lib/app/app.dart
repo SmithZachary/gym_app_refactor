@@ -1,4 +1,4 @@
-import 'package:bar_gym_app/app/screens/welcome_screen.dart';
+import 'package:bar_gym_app/app/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

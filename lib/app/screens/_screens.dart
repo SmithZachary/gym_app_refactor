@@ -1,3 +1,3 @@
 export 'scanner.dart';
-export 'welcome_screen.dart';
+export 'home_screen.dart';
 export 'profile.dart';

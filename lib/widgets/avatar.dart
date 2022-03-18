@@ -4,6 +4,8 @@ import 'dart:math';
 import 'package:bar_gym_app/app/utils/initials.dart';
 import 'package:flutter/material.dart';
 
+import '../app/utils/_utils.dart';
+
 class Avatar extends StatelessWidget {
   const Avatar({
     Key? key,
@@ -78,7 +80,13 @@ class Avatar extends StatelessWidget {
     } else {
       return CircleAvatar(
         radius: radius,
-        backgroundColor: colors[_random.nextInt(colors.length)],
+        backgroundColor: randoColors(colors: [
+          Colors.red,
+          Colors.blue,
+          Colors.green,
+          Colors.yellow,
+          Colors.orange
+        ]),
         child: Center(
           child: Text(
             initials(name: userName),
