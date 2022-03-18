@@ -32,10 +32,16 @@ class _ThemeSelectorState extends State<ThemeSelector> {
                   Padding(
                     padding: const EdgeInsets.only(left: 68.0),
                     child: ThemeItem(
-                      icon: Icon(Icons.wb_sunny),
-                      iconCheck: Icon(Icons.check_circle),
-                      iconCheckTransparent: Icon(
-                        Icons.check_circle,
+                      icon: const Icon(
+                        Icons.nightlight_round,
+                        size: 50,
+                      ),
+                      iconCheck: const Icon(
+                        Icons.check,
+                        color: Colors.green,
+                      ),
+                      iconCheckTransparent: const Icon(
+                        Icons.check,
                         color: Colors.transparent,
                       ),
                       index: 0,
@@ -46,10 +52,16 @@ class _ThemeSelectorState extends State<ThemeSelector> {
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16.0),
                     child: ThemeItem(
-                      icon: Icon(Icons.star_outline),
-                      iconCheck: Icon(Icons.check_circle),
-                      iconCheckTransparent: Icon(
-                        Icons.check_circle,
+                      icon: const Icon(
+                        Icons.star_outline,
+                        size: 50,
+                      ),
+                      iconCheck: const Icon(
+                        Icons.check,
+                        color: Colors.green,
+                      ),
+                      iconCheckTransparent: const Icon(
+                        Icons.check,
                         color: Colors.transparent,
                       ),
                       index: 1,
@@ -58,9 +70,15 @@ class _ThemeSelectorState extends State<ThemeSelector> {
                     ),
                   ),
                   ThemeItem(
-                    icon: Icon(Icons.nightlight_round),
-                    iconCheck: Icon(Icons.check_circle),
-                    iconCheckTransparent: Icon(
+                    icon: const Icon(
+                      Icons.wb_sunny,
+                      size: 50,
+                    ),
+                    iconCheck: const Icon(
+                      Icons.check,
+                      color: Colors.green,
+                    ),
+                    iconCheckTransparent: const Icon(
                       Icons.check_circle,
                       color: Colors.transparent,
                     ),
